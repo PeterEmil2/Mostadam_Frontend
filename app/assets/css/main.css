@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-custum-light: "SomarSans Light";
+  --font-custum-black: "SomarSans Black";
+}

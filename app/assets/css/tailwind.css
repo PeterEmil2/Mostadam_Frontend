@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.program-level-gradient {
+  background-image: linear-gradient(
+    to left,
+    #77babb,
+    #6eacb2,
+    #67a1aa,
+    #5a8e9e,
+    #4f7c93,
+    #538296,
+    #4c778f,
+    #436a87,
+    #3f6383,
+    #2a446f
+  );
+}
