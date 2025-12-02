@@ -29,7 +29,7 @@
           class="w-[172px] h-[24px] mx-auto pointer-events-none"
         />
       </div>
-      <div class="flex flex-wrap justify-center gap-6 ">
+      <div class="flex col-3 flex-wrap justify-center gap-8">
         <div
           v-for="item in [
             {
@@ -64,14 +64,9 @@
             },
           ]"
           :key="item.id"
-          class="m-6"
+          class="m-2"
         >
-          <InfoCardVertical
-            :number="item.number"
-            :title="item.title"
-            :icon="item.icon"
-            class="w-[357px] h-[193px]"
-          />
+          <InfoCardVertical :title="item.title" :icon="item.icon" />
         </div>
       </div>
     </div>
