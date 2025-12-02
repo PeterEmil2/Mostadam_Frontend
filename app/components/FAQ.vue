@@ -1,10 +1,20 @@
 <template>
-  <section dir="rtl" class="min-h-screen bg-[#F3F6FA] py-12 px-4">
-    <div class="max-w-4xl mx-auto">
+  <section dir="rtl" class="min-h-screen bg-[#F3F6FA] py-12 px-4 h-[930px]">
+    <div class="mx-auto">
       <div class="text-center mb-10">
-        <h2 class="text-3xl font-extrabold text-gray-900 mb-2">
+        <h2
+          class="text-3xl font-extrabold text-gray-900 mb-2 font-custum-ExtraBold text-[40px]"
+        >
           الأسئلة الشائعة
         </h2>
+        <!-- الصورة تحت الخط -->
+        <div class="relative mb-15">
+          <img
+            src="/icons/WhyMostadamIcons/Frame.svg"
+            alt="Why Mostadam"
+            class="w-[172px] h-[24px] mx-auto pointer-events-none"
+          />
+        </div>
       </div>
 
       <div class="space-y-4">
@@ -21,7 +31,9 @@
             @keyup.space.prevent="onToggle(item.id)"
             class="w-full text-right p-5 font-bold text-lg text-gray-800 hover:bg-gray-50 transition-colors flex justify-between items-center z-10"
           >
-            <span>{{ item.question }}</span>
+            <span class="font-custum-SemiBold text-[24px]">{{
+              item.question
+            }}</span>
 
             <svg
               v-if="activeId === item.id"
@@ -61,7 +73,7 @@
           <transition name="fade">
             <div
               v-if="activeId === item.id"
-              class="px-5 pb-5 pt-0 text-gray-600 leading-relaxed text-sm md:text-base"
+              class="px-5 pb-5 pt-0 text-gray-600 leading-relaxed font-custum-Medium text-[20px]"
             >
               <p class="pt-2 border-t border-gray-100 mt-2">
                 {{ item.answer }}

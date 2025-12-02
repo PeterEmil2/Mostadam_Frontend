@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="w-full py-4 px-6 flex items-center gap-6 bg-inherit text-white scroll-smooth"
+    class="w-full py-4 px-6 flex items-center gap-6 bg-inherit text-white scroll-smooth md:scroll-auto"
     dir="rtl"
   >
     <img
@@ -9,17 +9,19 @@
       class="w-[185px] h-[68px] object-contain"
     />
 
-    <div class="hidden md:flex items-center gap-7 pr-20 font-custum-Medium">
+    <div
+      class="hidden md:flex items-center gap-7 pr-20 font-custum-Medium smooth"
+    >
       <a
         href="#about"
-        class="hover:text-[#cce9ff] transition-colors duration-300"
+        class="hover:text-[#cce9ff] transition-colors duration-800"
       >
         عن البرنامج
       </a>
 
       <a
         href="#why"
-        class="hover:text-[#cce9ff] transition-colors duration-300"
+        class="hover:text-[#cce9ff] scroll- transition-colors duration-800"
       >
         لماذا مستدام
       </a>
