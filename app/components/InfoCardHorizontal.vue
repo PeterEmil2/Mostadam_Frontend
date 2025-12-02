@@ -8,16 +8,16 @@
     ]"
   >
     <div
-      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-600"
+      class="flex w-[61.83px] h-[61.83px] shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-600"
     >
-      <span class="text-2xl"><img :src="icon" alt="icon" /></span>
+      <span class=""><img :src="icon" alt="icon" /></span>
     </div>
 
     <div class="flex-1">
-      <h3 class="mb-2 text-lg font-bold text-gray-900">
+      <h3 class="mb-2 text-[24px] font-bold text-gray-900 font-custum-Medium">
         {{ title }}
       </h3>
-      <p class="text-lg leading-relaxed text-gray-600">
+      <p class="text-[18px] leading-relaxed text-gray-600 font-custum-Medium">
         {{ description }}
       </p>
     </div>

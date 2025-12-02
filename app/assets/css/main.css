@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --font-custum-light: "SomarSans Light";
   --font-custum-black: "SomarSans Black";
+  --font-custum-ExtraBold: "SomarSans ExtraBold";
+  --font-custum-Bold: "SomarSans Bold";
+  --font-custum-SemiBold: "SomarSans SemiBold";
+  --font-custum-Medium: "SomarSans Medium";
+  --font-custum-Regular: "SomarSans Regular";
+  --font-custum-Light: "SomarSans Light";
+  --font-custum-ExtraLight: "SomarSans ExtraLight";
+  --font-custum-Thin: "SomarSans Thin";
 }
