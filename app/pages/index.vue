@@ -7,4 +7,5 @@
   <ProgramLevels />
   <ExpectedImpact />
   <FAQ />
+  <AppFooter />
 </template>

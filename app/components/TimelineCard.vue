@@ -14,11 +14,11 @@
         />
       </div>
       <div>
-        <h4 class="text-gray-800 font-semibold text-[24px]">
+        <h4 class="font-custum-SemiBold text-[24px] text-[#233A69]">
           {{ title }}
         </h4>
         <!-- Description -->
-        <p class="text-gray-600 text-[16px] leading-relaxed">
+        <p class="font-custum-Regular text-[12px] text-[#233A69]">
           {{ description }}
         </p>
       </div>

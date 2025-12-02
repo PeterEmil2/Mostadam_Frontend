@@ -1,40 +1,41 @@
 <template>
-  <section id="program" class="py-20 bg-white">
+  <section id="program" class="py-20 bg-#FFFFFF pt-[48px]">
     <div class="container mx-auto px-6">
-      <h2
-        class="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-12"
-      >
-        ما الذي يقدمه البرنامج؟
-      </h2>
+      <div class="title-icon flex flex-col items-center mb-10">
+        <h2 class="font-custum-Bold text-[40px] text-center">
+          ما الذي يقدمه البرنامج؟
+        </h2>
+        <img
+          class="w-[142px] h-[24px]"
+          src="/icons/AboutProgram/Frame@2x.png"
+          alt=""
+        />
+      </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-2 gap-x-3 gap-y-3">
+      <div class="flex flex-wrap justify-center gap-8">
         <InfoCardHorizontal
           title="تمكين الجمعيات"
           description="تأسيس وحدات استثمار اجتماعي داخل الجمعيات."
-          icon="/images/profile-pic.png"
+          icon="/icons/ProgramProducts/dealIcon.png"
           variant="notdefault"
-          class="mr-10"
         />
         <InfoCardHorizontal
           title="بناء القدرات"
           description="تطوير مهارات الجمعيات لتصميم نماذج مالية مبتكرة."
-          icon="/images/profile-pic.png"
+          icon="/icons/ProgramProducts/hatIcon.png"
           variant="notdefault"
-          class="mr-10"
         />
         <InfoCardHorizontal
           title="أثر ملموس"
           description="دخل ذاتي مستدام وقيمة اجتماعية طويلة المدى."
-          icon="/images/profile-pic.png"
+          icon="/icons/ProgramProducts/wayIcon.png"
           variant="notdefault"
-          class="mr-10"
         />
         <InfoCardHorizontal
           title="مسار متكامل"
           description="من التحليل والتأسيس، مروراً بالتطوير، وصولاً لتنفيذ السوق وما بعده."
-          icon="/images/profile-pic.png"
+          icon="/icons/ProgramProducts/statIcon.png"
           variant="notdefault"
-          class="mr-10"
         />
       </div>
     </div>

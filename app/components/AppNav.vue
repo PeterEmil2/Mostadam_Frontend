@@ -4,12 +4,12 @@
     dir="rtl"
   >
     <img
-      src="/images/mostadamIcon.png"
+      src="/icons/FooterIcons/MostadamIcon.svg"
       alt="Logo"
-      class="w-20 h-20 object-contain"
+      class="w-[185px] h-[68px] object-contain"
     />
 
-    <div class="hidden md:flex items-center gap-7 font-bold text-lg pr-20">
+    <div class="hidden md:flex items-center gap-7 pr-20 font-custum-Medium">
       <a
         href="#about"
         class="hover:text-[#cce9ff] transition-colors duration-300"
