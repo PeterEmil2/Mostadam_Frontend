@@ -1,36 +1,38 @@
 <template>
-  <section class="hero pt-0 mt-0 bg-gradient-to-r from-[#4A7A92] to-[#3B607A]">
+  <section
+    class="hero w-full h-[708px] pt-0 mt-0 bg-[linear-gradient(101.78deg,_#77BABB_7.12%,_#6EACB2_18.54%,_#67A1AA_29.52%,_#5A8E9E_39.63%,_#4F7C93_49.3%,_#538296_58.96%,_#4C778F_69.07%,_#436A87_77.86%,_#3F6383_86.65%,_#2A446F_95.87%)]"
+  >
     <AppNav />
     <div
-      class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-10 px-6 pt-32"
+      class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-10 px-6 pt-15"
     >
       <div class="hero-image flex-1">
         <img
-          src="/images/profile-pic.png"
+          src="/images/Img hero.png"
           alt="hero"
-          class="w-full max-w-lg mx-auto"
+          class="w-[544px] h-[468.59px]"
         />
       </div>
 
       <div class="hero-content flex-1 text-right">
-        <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">
+        <h3 class="text-white mb-4 text-[40px] font-custum-Bold">
           مستدام.. عطاء يدوم وأثر يستمر..
-        </h1>
+        </h3>
 
-        <p class="text-white mb-6 font-bold text-lg md:text-xl">
-          استثمار اجتماعي يصنع مستقبل الجمعيات الأهلية.. عبر مبادرة تعزز استدامة
-          عطاء الجمعيات الاهلية.. عبر مبادرة تعزز استدامة عطاء الجمعيات الاهلية
-          عبر وحدات استثمار اجتماعي مبتكرة
-        </p>
+        <h4 class="text-white mb-6 font-custum-Medium text-[32px] text-justify">
+          استثمار اجتماعي يصنع مستقبل الجمعيات الأهلية.. <br />عبر مبادرة تعزز
+          استدامة عطاء الجمعيات الاهلية.. عبر مبادرة تعزز استدامة عطاء الجمعيات
+          الاهلية عبر وحدات استثمار اجتماعي مبتكرة
+        </h4>
 
         <div class="buttons flex flex-col sm:flex-row gap-4">
           <button
-            class="bg-[#A52A2A] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#8B1C1C] transition"
+            class="bg-[#233A69] text-white font-semibold py-3 px-6 rounded-lg"
           >
             استبيان تسجيل الاهتمام
           </button>
           <button
-            class="bg-white border border-[#A52A2A] text-[#A52A2A] font-semibold py-3 px-6 rounded-lg hover:bg-[#A52A2A] hover:text-white transition"
+            class="bg-[#FFFFFF] border text-[#233A69] font-semibold py-3 px-6 rounded-lg"
           >
             استبيان التسجيل للالتحاق
           </button>

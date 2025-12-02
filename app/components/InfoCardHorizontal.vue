@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-start gap-4 rounded-2xl p-6 transition-transform duration-300 ease-in-out hover:scale-105"
+    class="flex items-start gap-4 bg-[#9FB4DF40] w-[597px] h-[140px] rounded-2xl pt-[30px] pb-[30px] pl-[16px] pr-[16px] transition-transform duration-300 ease-in-out hover:scale-105"
     :class="[
       variant === 'default'
         ? 'bg-white shadow-lg shadow-blue-900/10'
