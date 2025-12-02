@@ -23,11 +23,11 @@ defineProps({
       <img :src="icon" alt="icon" class="w-16 h-16 object-contain" />
     </div>
 
-    <h3 class="text-3xl font-bold text-[#385b73] mb-2 font-sans dir-ltr">
+    <h3 class="text-[20px] font-custum-Medium mb-2 dir-ltr">
       {{ number }}
     </h3>
 
-    <p class="text-[#385b73] font-semibold text-lg leading-snug">
+    <p class="text-[20px] font-custum-Medium leading-snug">
       {{ title }}
     </p>
   </div>
