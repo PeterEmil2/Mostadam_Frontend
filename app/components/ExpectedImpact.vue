@@ -1,7 +1,7 @@
 <template>
   <section
     id="achievements"
-    class="py-20 bg-white bg-gradient-to-r from-[#4A7A92] to-[#3B607A]"
+    class="bg-white bg-gradient-to-r from-[#4A7A92] to-[#3B607A] pb-10"
     style="
       background: linear-gradient(
         101.78deg,
@@ -21,13 +21,20 @@
     >
 
     <div class="container mx-auto px-6">
-      <h2 class="text-[40px] font-bold text-white text-center mb-12 font-somar">
-        الاثر المتوقع
-      </h2>
+      <div class="title-icon flex flex-col items-center">
+        <h1 class="text-center mt-10 font-custum-Bold text-[40px] text-white">
+          الاثر المتوقع
+        </h1>
+        <img
+          class="w-[142px] h-[24px]"
+          src="/icons/AboutProgram/Frame@2x.png"
+          alt=""
+        />
+      </div>
 
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center pt-5">
         <p
-          class="w-[571px] h-[104px] text-center text-[16px] leading-[100%] tracking-[0%] font-normal opacity-100 text-white"
+          class="w-[571px] h-[104px] text-center font-custum-Regular font-normal text-[#FFFFFF]"
         >
           بعد 18 شهراً من إطلاق البرنامج..
           <br />
@@ -67,13 +74,9 @@
             },
           ]"
           :key="item.id"
-          class="w-full md:w-[30%]"
+          class="m-2"
         >
-          <InfoCardVertical
-            :title="item.title"
-            :icon="item.icon"
-            class="h-full"
-          />
+          <InfoCardVertical :title="item.title" :icon="item.icon" />
         </div>
       </div>
     </div>
