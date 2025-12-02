@@ -16,10 +16,10 @@
         <div
           v-for="(stage, index) in stages"
           :key="index"
-          class="relative flex items-center gap-45 odd:flex-row even:flex-row-reverse"
+          class="relative flex items-center gap-45 odd:flex-row even:flex-row-reverse py-13"
           :class="{
-            // لو مش آخر كارت حط الخط
-            'after:content-[\'\'] after:-z-10 after:absolute after:bottom-0 after:w-[300px] after:border-t-2 after:border-dashed after:border-gray-400  p-20 after:-translate-y-1/2':
+            // الخط الأساسي — يظهر فقط لو مش آخر كارت
+            'after:content-[\'\'] after:-z-10 after:absolute after:bottom-0 after:w-[300px] after:h-[2px]  after:-translate-y-1/2 after:bg-[repeating-linear-gradient(to_right,#b9b9b9_0_10px,transparent_40px_50px)]':
               index !== stages.length - 1,
 
             // odd → الخط على اليمين ومايل يمين
@@ -27,7 +27,7 @@
               index !== stages.length - 1,
 
             // even → الخط على الشمال ومايل شمال
-            'even:after:left-4/10 even:after:rotate-[-38deg]':
+            'even:after:left-4/10 even:after:rotate-[-38deg] p-13':
               index !== stages.length - 1,
           }"
         >
