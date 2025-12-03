@@ -22,14 +22,14 @@
         />
         <img
           src="/icons/HeroIcons/tenderIcon.png"
-          class="absolute bottom-0 right-0 -translate-y-1/2 w-20 sm:w-28 md:w-[120px] lg:w-[148px] h-auto"
+          class="absolute bottom-0 right-30 -translate-y-1/2 w-20 sm:w-28 md:w-[120px] lg:w-[148px] h-auto"
         />
       </div>
 
       <!-- Hero Content -->
-      <div class="hero-content flex-1 l md:w-auto text-center">
+      <div class="hero-content flex-1 l md:w-auto text-center pr-[5px]">
         <h3
-          class="text-white mb-3 sm:mb-4 text-[18px] sm:text-[18px] md:text-[40px] font-custum-Bold leading-tight"
+          class="text-white mb-3 sm:mb-4 text-[18px] sm:text-[18px] md:text-[40px] font-custum-Bold md:text-right leading-tight"
         >
           مستدام.. عطاء يدوم وأثر يستمر..
         </h3>
