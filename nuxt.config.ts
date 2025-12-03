@@ -86,4 +86,7 @@ export default defineNuxtConfig({
       },
     ],
   },
+  app: {
+    baseURL: "/Mostadam_Frontend/",
+  },
 });
