@@ -41,14 +41,14 @@
       </a>
 
       <a
-        href="#steps"
+        href="#programLevels"
         class="hover:text-[#cce9ff] transition-colors duration-300"
       >
         مراحل البرنامج
       </a>
 
       <a
-        href="#impact"
+        href="#expectedImpact"
         class="hover:text-[#cce9ff] transition-colors duration-300"
       >
         الأثر المتوقع

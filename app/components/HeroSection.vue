@@ -6,11 +6,20 @@
     <div
       class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-10 px-6 pt-15"
     >
-      <div class="hero-image flex-1">
+      <div class="hero-image flex-1 relative">
+        <img
+          src="/icons/HeroIcons/Stare.png"
+          class="absolute left-30 w-[54px] h-[55px]"
+        />
         <img
           src="/images/Img hero.png"
           alt="hero"
           class="w-[544px] h-[468.59px]"
+        />
+
+        <img
+          src="/icons/HeroIcons/tenderIcon.png"
+          class="absolute bottom-0 right-0 -translate-y-1/2 w-[148px] h-[49px]"
         />
       </div>
 
