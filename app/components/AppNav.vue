@@ -11,7 +11,59 @@
         class="w-20 md:w-[185px] h-auto md:h-[68px] object-contain"
       />
 
-    
+      <!-- Desktop Menu -->
+      <div
+        class="hidden md:flex items-center gap-5 lg:gap-7 pr-4 lg:pr-8 font-custum-Medium"
+      >
+        <a
+          href="#about"
+          class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-800"
+        >
+          عن البرنامج
+        </a>
+
+        <a
+          href="#why"
+          class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-800"
+        >
+          لماذا مستدام
+        </a>
+
+        <a
+          href="#program"
+          class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-300"
+        >
+          ما نقدمه
+        </a>
+
+        <a
+          href="#achievements"
+          class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-300"
+        >
+          إنجازاتنا
+        </a>
+
+        <a
+          href="#programLevels"
+          class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-300"
+        >
+          مراحل البرنامج
+        </a>
+
+        <a
+          href="#expectedImpact"
+          class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-300"
+        >
+          الأثر المتوقع
+        </a>
+
+        <a
+          href="#contact"
+          class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-300"
+        >
+          اتصل بنا
+        </a>
+      </div>
     </div>
 
     <!-- Mobile Menu Button -->
@@ -23,42 +75,84 @@
       <span
         class="w-6 h-0.5 bg-white transition-transform duration-300"
         :class="mobileMenuOpen ? 'rotate-45 translate-y-2' : ''"
-      </span>
+      ></span>
+      <span
+        class="w-6 h-0.5 bg-white transition-opacity duration-300"
+        :class="mobileMenuOpen ? 'opacity-0' : ''"
+      ></span>
+      <span
+        class="w-6 h-0.5 bg-white transition-transform duration-300"
+        :class="mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''"
+      ></span>
     </button>
 
     <!-- Mobile Menu -->
     <transition name="slide">
       <div v-if="mobileMenuOpen" class="fixed inset-0 md:hidden z-40">
-        <div class="absolute inset-0 bg-black/30 backdrop-blur-md z-40" @click="mobileMenuOpen = false"></div>
+        <!-- backdrop overlay: blurs the page under the menu and closes on click -->
 
-        <div class="absolute inset-x-4 top-12 bg-linear-to-br from-white/5 to-white/10 backdrop-blur-lg rounded-3xl p-4 md:p-6 pointer-events-auto z-50">
-          <button @click="mobileMenuOpen = false" aria-label="Close menu" class="absolute left-4 top-4 text-white p-1">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+        <div
+          class="absolute inset-x-4 top-16 rounded-2xl py-4 px-4 space-y-3 pointer-events-auto z-50"
+        >
+          <div
+            class="absolute z-40 bg-white/30 backdrop-blur-sm opacity-100 inset-0 rounded-2xl"
+            @click="mobileMenuOpen = false"
+          ></div>
+          <a
+            href="#about"
+            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            @click="mobileMenuOpen = false"
+          >
+            عن البرنامج
+          </a>
 
-          <img src="/icons/FooterIcons/MostadamIcon.svg" alt="Mostadam" class="absolute right-4 top-4 w-24" />
+          <a
+            href="#why"
+            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            @click="mobileMenuOpen = false"
+          >
+            لماذا مستدام
+          </a>
 
-          <div class="mt-6">
-            <div class="bg-black/25 backdrop-blur-sm rounded-xl p-3 space-y-3 text-right">
-              <a href="#about" class="block text-white text-base" @click="mobileMenuOpen = false">عن البرنامج</a>
-              <a href="#why" class="block text-white text-base" @click="mobileMenuOpen = false">لماذا مستدام</a>
-              <a href="#program" class="block text-white text-base" @click="mobileMenuOpen = false">ما نقدمه</a>
-              <a href="#achievements" class="block text-white text-base" @click="mobileMenuOpen = false">انجازاتنا</a>
-              <a href="#programLevels" class="block text-white text-base" @click="mobileMenuOpen = false">مراحل البرنامج</a>
-              <a href="#expectedImpact" class="block text-white text-base" @click="mobileMenuOpen = false">الأثر المتوقع</a>
-              <a href="#contact" class="block text-white text-base" @click="mobileMenuOpen = false">اتصل بنا</a>
-            </div>
+          <a
+            href="#program"
+            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            @click="mobileMenuOpen = false"
+          >
+            ما نقدمه
+          </a>
 
-            <p class="text-white text-sm md:text-base mt-4">مستدام.. عطاء يدوم وأثر يستمر..</p>
-            <p class="text-white/80 text-xs md:text-sm mt-2">استثمار اجتماعي يصنع مستقبل الجمعيات الأهلية.. عبر مبادرة تعزز استدامة عطاء الجمعيات الاهلية عبر وحدات استثمار اجتماعي مبتكرة</p>
+          <a
+            href="#achievements"
+            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            @click="mobileMenuOpen = false"
+          >
+            إنجازاتنا
+          </a>
 
-            <div class="mt-4 flex flex-col gap-3">
-              <button class="w-full bg-[#233A69] text-white py-2 rounded-lg">استبيان تسجيل الاهتمام</button>
-              <button class="w-full bg-white text-[#233A69] py-2 rounded-lg">استبيان التسجيل للالتحاق</button>
-            </div>
-          </div>
+          <a
+            href="#programLevels"
+            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            @click="mobileMenuOpen = false"
+          >
+            مراحل البرنامج
+          </a>
+
+          <a
+            href="#expectedImpact"
+            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            @click="mobileMenuOpen = false"
+          >
+            الأثر المتوقع
+          </a>
+
+          <a
+            href="#contact"
+            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            @click="mobileMenuOpen = false"
+          >
+            اتصل بنا
+          </a>
         </div>
       </div>
     </transition>
