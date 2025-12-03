@@ -7,7 +7,6 @@
         >
           الأسئلة الشائعة
         </h2>
-        <!-- الصورة تحت الخط -->
         <div class="relative mb-15">
           <img
             src="/icons/WhyMostadamIcons/Frame.svg"
@@ -23,7 +22,6 @@
           :key="item.id"
           class="bg-white rounded-2xl shadow-sm overflow-hidden"
         >
-          <!-- button: type button + aria for accessibility + keyboard support -->
           <button
             type="button"
             @click="onToggle(item.id)"

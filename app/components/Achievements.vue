@@ -1,7 +1,7 @@
 <template>
   <section
     id="achievements"
-    class="py-10 overflow-hidden h-[761px]"
+    class="py-8 md:py-10 overflow-hidden h-auto md:h-[761px]"
     style="
       background: linear-gradient(
         101.78deg,
@@ -18,18 +18,19 @@
     "
   >
     <div class="text-center relative z-10">
-      <h1 class="text-[40px] font-bold text-white font-custum-Bold">
+      <h1 class="text-2xl md:text-[40px] font-bold text-white font-custum-Bold">
         أنجازاتنا
       </h1>
-      <!-- الصورة تحت الخط -->
-      <div class="relative mb-15">
+
+      <div class="relative mb-6 md:mb-10">
         <img
           src="/icons/WhyMostadamIcons/Frame.svg"
           alt="Why Mostadam"
-          class="w-[172px] h-[24px] mx-auto pointer-events-none"
+          class="w-24 md:w-[172px] h-6 md:h-6 mx-auto pointer-events-none"
         />
       </div>
-      <div class="flex col-3 flex-wrap justify-center gap-8">
+
+      <div class="flex flex-wrap justify-center gap-4 md:gap-6 mb-6">
         <div
           v-for="item in [
             {
@@ -50,6 +51,17 @@
               title: 'جمعية مسجلة من 13 منطقة',
               icon: '/icons/AchievementIcons/Frame 1984077894.svg',
             },
+          ]"
+          :key="item.id"
+          class="w-[357px] h-[193px] flex justify-center"
+        >
+          <InfoCardVertical :title="item.title" :icon="item.icon" />
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+        <div
+          v-for="item in [
             {
               id: 4,
               number: '3.57x',
@@ -64,7 +76,7 @@
             },
           ]"
           :key="item.id"
-          class="m-2"
+          class="w-[357px] h-[193px] flex justify-center"
         >
           <InfoCardVertical :title="item.title" :icon="item.icon" />
         </div>

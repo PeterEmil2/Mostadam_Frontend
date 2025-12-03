@@ -1,44 +1,56 @@
 <template>
   <footer
-    id="contact" class="bg-[linear-gradient(101.78deg,_#77BABB_7.12%,_#6EACB2_18.54%,_#67A1AA_29.52%,_#5A8E9E_39.63%,_#4F7C93_49.3%,_#538296_58.96%,_#4C778F_69.07%,_#436A87_77.86%,_#3F6383_86.65%,_#2A446F_95.87%)] text-white pt-12 pb-8"
+    id="contact"
+    class="bg-[linear-gradient(101.78deg,#77BABB_7.12%,#6EACB2_18.54%,#67A1AA_29.52%,#5A8E9E_39.63%,#4F7C93_49.3%,#538296_58.96%,#4C778F_69.07%,#436A87_77.86%,#3F6383_86.65%,#2A446F_95.87%)] text-white py-8 md:py-12"
   >
     <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-8">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 mb-8"
+      >
         <!-- Company Info -->
         <div class="space-y-4">
           <div class="flex items-center">
             <img
               src="/icons/FooterIcons/MostadamIcon.svg"
               alt="hero"
-              class="w-[137px] h-[46px]"
+              class="w-28 md:w-[137px] h-auto md:h-[46px]"
             />
           </div>
-          <p class="">
+          <p class="text-sm md:text-base">
             برنامج وطني يمكن الجمعيات الأهلية من تطوير وحدات استثمار اجتماعي تدر
             دخلاً ذاتياً وتحقق أثراً اجتماعياً ملموساً.
           </p>
           <div class="space-y-2 text-white">
-            <a href="#" class="hover:text-white transition flex">
+            <a
+              href="#"
+              class="hover:text-white transition flex items-center text-sm"
+            >
               <img
                 src="/icons/FooterIcons/Location.svg"
-                alt="hero"
-                class="w-[15px] h-[20px]"
+                alt="location"
+                class="w-4 h-4"
               />
               <span class="pr-2">الرياض، المملكة العربية السعودية</span>
             </a>
-            <a href="#" class="hover:text-white transition flex">
+            <a
+              href="#"
+              class="hover:text-white transition flex items-center text-sm"
+            >
               <img
                 src="/icons/FooterIcons/phone.svg"
-                alt="hero"
-                class="w-[15px] h-[20px]"
+                alt="phone"
+                class="w-4 h-4"
               />
-              <span class="pr-2"> +966112345678</span>
+              <span class="pr-2">+966112345678</span>
             </a>
-            <a href="#" class="text-gray-400 hover:text-white transition flex">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white transition flex items-center text-sm"
+            >
               <img
                 src="/icons/FooterIcons/mail.svg"
-                alt="hero"
-                class="w-[15px] h-[20px]"
+                alt="mail"
+                class="w-4 h-4"
               />
               <span class="pr-2">Info@mostadam.sa</span>
             </a>
@@ -46,32 +58,56 @@
         </div>
 
         <!-- Quick Links -->
-        <div class="space-y-4 pr-50">
-          <h3 class="text-lg font-semibold text-[18px]">روابط سريعة</h3>
-          <ul class="space-y-2">
+        <div class="space-y-4 pr-0 md:pr-8">
+          <h3 class="text-lg font-semibold">روابط سريعة</h3>
+          <ul class="grid grid-cols-2 md:grid-cols-1 gap-2">
             <li>
-              <a href="#" class="hover:text-white transition text-[16px]">عن البرنامج</a>
+              <a
+                href="#"
+                class="hover:text-white transition text-sm md:text-[16px]"
+                >عن البرنامج</a
+              >
             </li>
             <li>
-              <a href="#" class="hover:text-white transition text-[16px]">لماذا مستدام؟</a>
+              <a
+                href="#"
+                class="hover:text-white transition text-sm md:text-[16px]"
+                >لماذا مستدام؟</a
+              >
             </li>
             <li>
-              <a href="#" class="hover:text-white transition text-[16px]">ما الذي يقدّمه البرنامج؟</a>
+              <a
+                href="#"
+                class="hover:text-white transition text-sm md:text-[16px]"
+                >ما الذي يقدّمه البرنامج؟</a
+              >
             </li>
             <li>
-              <a href="#" class="hover:text-white transition text-[16px]">مراحل البرنامج</a>
+              <a
+                href="#"
+                class="hover:text-white transition text-sm md:text-[16px]"
+                >مراحل البرنامج</a
+              >
             </li>
             <li>
-              <a href="#" class="hover:text-white transition text-[16px]">الأثر المتوقع</a>
-              <li>
-              <a href="#" class="hover:text-white transition text-[16px]">الأسئلة الشائعة </a>
+              <a
+                href="#"
+                class="hover:text-white transition text-sm md:text-[16px]"
+                >الأثر المتوقع</a
+              >
             </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition text-sm md:text-[16px]"
+                >الأسئلة الشائعة</a
+              >
             </li>
           </ul>
         </div>
 
         <!-- Company Info -->
-        <div class="space-y-4 pr-50">
+        <div class="space-y-4 pr-0 md:pr-8">
           <div class="flex items-center">
             <span class="ml-2 text-xl font-bold">تابعنا</span>
           </div>
@@ -115,23 +151,20 @@
               </svg>
             </a>
           </div>
-          <div class="buttons flex sm:flex-col gap-4">
+          <div class="buttons flex flex-col gap-4">
             <button
-              class="w-[204px] h-[41px] bg-[#233A69] text-[12px] text-white font-semibold py-3 px-6 rounded-lg"
+              class="w-full md:w-[204px] h-10 bg-[#233A69] text-[12px] text-white font-semibold rounded-lg"
             >
               استبيان تسجيل الاهتمام
             </button>
-            
             <button
-              class="w-[204px] h-[41px] bg-[#FFFFFF] text-[12px] text-[#233A69] font-semibold py-3 px-6 rounded-lg"
+              class="w-full md:w-[204px] h-10 bg-white text-[12px] text-[#233A69] font-semibold rounded-lg"
             >
               استبيان التسجيل للالتحاق
             </button>
           </div>
         </div>
       </div>
-
-      
     </div>
   </footer>
 </template>

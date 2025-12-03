@@ -1,7 +1,7 @@
 <template>
   <section
     id="why"
-    class="py-10 overflow-hidden h-[805px]"
+    class="py-6 md:py-10 overflow-hidden h-auto md:h-[805px]"
     style="
       background: linear-gradient(
         101.78deg,
@@ -17,22 +17,24 @@
       );
     "
   >
-    <div class="text-center mb-5 relative z-10">
-      <h1 class="text-[40px] font-bold text-white mb-2 font-custum-Bold">
+    <div class="text-center mb-3 md:mb-5 relative z-10">
+      <h1
+        class="text-2xl md:text-4xl font-bold text-white mb-2 font-custum-Bold"
+      >
         لماذا مستدام؟
       </h1>
-      <div class="relative mb-5">
+      <div class="relative mb-3 md:mb-5">
         <img
           src="/icons/WhyMostadamIcons/Frame.svg"
           alt="Why Mostadam"
-          class="w-[172px] h-[24px] mx-auto pointer-events-none"
+          class="w-[120px] md:w-[172px] h-4 md:h-6 mx-auto pointer-events-none"
         />
       </div>
 
       <div
-        class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10 relative z-20"
+        class="container mx-auto px-3 md:px-6 flex flex-col md:flex-row items-center gap-6 md:gap-10 relative z-20"
       >
-        <div class="flex-1 w-full flex flex-col gap-6 z-0">
+        <div class="flex-1 w-full flex flex-col gap-4 md:gap-6 z-0">
           <div v-for="(card, index) in cards" :key="index">
             <InfoCardHorizontal
               :title="card.title"
@@ -40,7 +42,7 @@
               :icon="card.icon"
               variant="default"
               :class="[
-                'h-32 w-[503.83px]',
+                'h-24 md:h-32 w-full md:w-[503.83px]',
                 card.position === 'right' ? 'self-end' : 'self-start md:mr-12',
               ]"
             />
@@ -59,7 +61,7 @@
       <img
         src="/images/WhyMostadam.svg"
         alt="Why Mostadam"
-        class="absolute top-1/2 right-0 -translate-y-1/2 w-[908px] h-[720px] pointer-events-none z-10"
+        class="absolute top-1/2 right-0 -translate-y-1/2 w-[450px] md:w-[650px] lg:w-[908px] h-auto pointer-events-none z-10"
       />
     </div>
   </section>
