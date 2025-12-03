@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="bg-[linear-gradient(101.78deg,_#77BABB_7.12%,_#6EACB2_18.54%,_#67A1AA_29.52%,_#5A8E9E_39.63%,_#4F7C93_49.3%,_#538296_58.96%,_#4C778F_69.07%,_#436A87_77.86%,_#3F6383_86.65%,_#2A446F_95.87%)] text-white pt-12 pb-8"
+    id="contact" class="bg-[linear-gradient(101.78deg,_#77BABB_7.12%,_#6EACB2_18.54%,_#67A1AA_29.52%,_#5A8E9E_39.63%,_#4F7C93_49.3%,_#538296_58.96%,_#4C778F_69.07%,_#436A87_77.86%,_#3F6383_86.65%,_#2A446F_95.87%)] text-white pt-12 pb-8"
   >
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-8">

@@ -7,13 +7,9 @@
         : 'bg-[#EBF2F8] hover:bg-blue-50',
     ]"
   >
-    <div
-      class="flex w-[61.83px] h-[61.83px] shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-600"
-    >
-      <span class=""><img :src="icon" alt="icon" /></span>
-    </div>
+    <span class=""><img :src="icon" alt="icon" /></span>
 
-    <div class="flex-1">
+    <div class="flex flex-col items-start">
       <h3 class="mb-2 text-[24px] font-bold text-gray-900 font-custum-Medium">
         {{ title }}
       </h3>

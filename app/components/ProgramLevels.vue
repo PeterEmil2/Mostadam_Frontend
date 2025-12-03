@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br p-8" dir="rtl">
+  <div id="programLevels" class="min-h-screen bg-gradient-to-br p-8" dir="rtl">
     <div class="max-w-6xl mx-auto">
       <!-- Header -->
       <div class="flex flex-col items-center mb-10">
