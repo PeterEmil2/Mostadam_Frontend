@@ -34,7 +34,7 @@
           مستدام.. عطاء يدوم وأثر يستمر..
         </h3>
         <h4
-          class="text-white mb-4 sm:mb-6 font-custum-Medium text-[16px] sm:text-base md:text-[25px] text-center md:text-right "
+          class="text-white mb-4 sm:mb-6 font-custum-Medium text-[16px] sm:text-base md:text-[25px] text-center md:text-right"
         >
           استثمار اجتماعي يصنع مستقبل الجمعيات الأهلية.. <br />
           عبر مبادرة تعزز استدامة عطاء الجمعيات الاهلية.. عبر مبادرة تعزز
