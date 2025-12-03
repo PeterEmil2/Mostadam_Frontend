@@ -21,7 +21,6 @@
       <h1 class="text-[40px] font-bold text-white mb-2 font-custum-Bold">
         لماذا مستدام؟
       </h1>
-      <!-- الصورة تحت الخط -->
       <div class="relative mb-5">
         <img
           src="/icons/WhyMostadamIcons/Frame.svg"
@@ -31,45 +30,21 @@
       </div>
 
       <div
-        class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10"
+        class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10 relative z-20"
       >
         <div class="flex-1 w-full flex flex-col gap-6 z-0">
-          <img
-            src="/images/WhyMostadam.svg"
-            alt="Why Mostadam"
-            class="absolute w-[908px] h-[720px] z-10 pointer-events-none pb-10"
-          />
-          <InfoCardHorizontal
-            title="الواقع"
-            description="70% من الجمعيات تعتمد على تبرعات غير منتظمة."
-            icon="/icons/WhyMostadamIcons/Group.svg"
-            variant="default"
-            class="self-end h-32 w-[503.83px]"
-          />
-
-          <InfoCardHorizontal
-            title="النتيجة"
-            description="ضعف الاستدامة وتذبذب البرامج."
-            icon="/icons/WhyMostadamIcons/Group-1.svg"
-            variant="default"
-            class="md:mr-12 self-start h-32 w-[503.83px]"
-          />
-
-          <InfoCardHorizontal
-            title="الحل"
-            description="تأسيس وحدات استثمار اجتماعي داخل الجمعيات."
-            icon="/icons/WhyMostadamIcons/Group-2.svg"
-            variant="default"
-            class="self-end h-32 w-[503.83px]"
-          />
-
-          <InfoCardHorizontal
-            title="الأثر"
-            description="منتجات وخدمات تبيع وتحقق أثراً مستداماً."
-            icon="/icons/WhyMostadamIcons/Group-3.svg"
-            variant="default"
-            class="md:mr-12 self-start h-32 w-[503.83px]"
-          />
+          <div v-for="(card, index) in cards" :key="index">
+            <InfoCardHorizontal
+              :title="card.title"
+              :description="card.description"
+              :icon="card.icon"
+              variant="default"
+              :class="[
+                'h-32 w-[503.83px]',
+                card.position === 'right' ? 'self-end' : 'self-start md:mr-12',
+              ]"
+            />
+          </div>
         </div>
 
         <div class="flex-1 flex justify-center items-center relative">
@@ -80,6 +55,40 @@
           <img src="/images/Img.svg" alt="Why Sustainable" class="" />
         </div>
       </div>
+
+      <img
+        src="/images/WhyMostadam.svg"
+        alt="Why Mostadam"
+        class="absolute top-1/2 right-0 -translate-y-1/2 w-[908px] h-[720px] pointer-events-none z-10"
+      />
     </div>
   </section>
 </template>
+<script setup>
+const cards = [
+  {
+    title: "الواقع",
+    description: "70% من الجمعيات تعتمد على تبرعات غير منتظمة.",
+    icon: "/icons/WhyMostadamIcons/Group.svg",
+    position: "right",
+  },
+  {
+    title: "النتيجة",
+    description: "ضعف الاستدامة وتذبذب البرامج.",
+    icon: "/icons/WhyMostadamIcons/Group-1.svg",
+    position: "left",
+  },
+  {
+    title: "الحل",
+    description: "تأسيس وحدات استثمار اجتماعي داخل الجمعيات.",
+    icon: "/icons/WhyMostadamIcons/Group-2.svg",
+    position: "right",
+  },
+  {
+    title: "الأثر",
+    description: "منتجات وخدمات تبيع وتحقق أثراً مستداماً.",
+    icon: "/icons/WhyMostadamIcons/Group-3.svg",
+    position: "left",
+  },
+];
+</script>
