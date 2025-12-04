@@ -26,7 +26,7 @@
               class="hover:text-white transition flex items-center text-sm"
             >
               <img
-                src="/icons/FooterIcons/Location.svg"
+                src="/icons/FooterIcons/location.svg"
                 alt="location"
                 class="w-4 h-4"
               />
