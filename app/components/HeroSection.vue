@@ -13,7 +13,7 @@
       >
         <img
           src="/icons/HeroIcons/Stare.png"
-          class="absolute left-0 sm:left-0 md:left-[-43px] top-[-10px] w-8 sm:w-10 md:w-[54px] h-8 sm:h-10 md:h-[55px] z-10"
+          class="absolute left-5 sm:left-0 md:left-[-43px] top-[-10px] w-8 sm:w-10 md:w-[54px] h-8 sm:h-10 md:h-[55px] z-10"
         />
         <img
           src="/images/Img hero.png"
