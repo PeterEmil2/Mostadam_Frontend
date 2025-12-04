@@ -73,7 +73,9 @@
               v-if="activeId === item.id"
               class="px-5 pb-5 pt-0 text-gray-600 leading-relaxed font-custum-Medium text-[20px]"
             >
-              <p class="pt-2 border-t border-gray-100 mt-2 md:text-[20px] text-[12px]">
+              <p
+                class="pt-2 border-t border-gray-100 mt-2 md:text-[20px] text-[12px]"
+              >
                 {{ item.answer }}
               </p>
             </div>
@@ -85,9 +87,6 @@
 </template>
 
 <script setup lang="ts">
-// Debug helper to ensure this script runs
-console.log("[FaqAccordion] script setup running");
-
 const activeId = ref<number | null>(null);
 
 const onToggle = (id: number) => {

@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="w-full py-2 md:py-3 px-3 md:px-6 flex items-center justify-start relative text-white scroll-smooth mx-3 md:mx-0 mt-3 md:mt-0 md:bg-inherit"
+    class="w-full py-2 md:py-3 px-3 md:px-6 flex items-center justify-start relative text-white scroll-smooth md:mx-0 md:mt-0"
     dir="rtl"
   >
     <div class="flex items-center gap-4">
@@ -52,9 +52,8 @@
         v-if="mobileMenuOpen"
         class="fixed inset-0 md:hidden z-40 flex items-start justify-center"
       >
-        <!-- صندوق اللينكات مع blur -->
         <div
-          class="relative h-[345px] z-50 mt-5 mx-4 w-full max-w-sm rounded-2xl py-4 px-4 bg-black/30 backdrop-blur-lg shadow-lg flex flex-col items-start gap-1 menu-blur"
+          class="relative h-[345px] z-50 mt-2 mx-4 w-full max-w-sm rounded-2xl py-4 px-4 bg-black/30 backdrop-blur-lg shadow-lg flex flex-col items-start gap-1 menu-blur"
         >
           <img
             src="/icons/FooterIcons/MostadamIcon.svg"
@@ -76,11 +75,18 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
 
 const mobileMenuOpen = ref(false);
 
-// مصفوفة اللينكات
+// close mobile menu when user scrolls
+function closeOnScroll() {
+  if (mobileMenuOpen.value) mobileMenuOpen.value = false;
+}
+
+onMounted(() => window.addEventListener("scroll", closeOnScroll, { passive: true }));
+onBeforeUnmount(() => window.removeEventListener("scroll", closeOnScroll));
+
 const links = [
   { label: "عن البرنامج", href: "#about" },
   { label: "لماذا مستدام", href: "#why" },
