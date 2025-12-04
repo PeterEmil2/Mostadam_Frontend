@@ -21,42 +21,36 @@
         >
           عن البرنامج
         </a>
-
         <a
           href="#why"
           class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-800"
         >
           لماذا مستدام
         </a>
-
         <a
           href="#program"
           class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-300"
         >
           ما نقدمه
         </a>
-
         <a
           href="#achievements"
           class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-300"
         >
           إنجازاتنا
         </a>
-
         <a
           href="#programLevels"
           class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-300"
         >
           مراحل البرنامج
         </a>
-
         <a
           href="#expectedImpact"
           class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-300"
         >
           الأثر المتوقع
         </a>
-
         <a
           href="#contact"
           class="text-sm md:text-base hover:text-[#cce9ff] transition-colors duration-300"
@@ -89,66 +83,61 @@
     <!-- Mobile Menu -->
     <transition name="slide">
       <div v-if="mobileMenuOpen" class="fixed inset-0 md:hidden z-40">
-        <!-- backdrop overlay: blurs the page under the menu and closes on click -->
-
+        <!-- Overlay خلف الـ page -->
         <div
-          class="absolute inset-x-4 top-16 rounded-2xl py-4 px-4 space-y-3 pointer-events-auto z-50"
+          class="absolute inset-0 bg-black/30 backdrop-blur-sm"
+          @click="mobileMenuOpen = false"
+        ></div>
+
+        <!-- Mobile Menu Links -->
+        <div
+          class="relative z-50 mt-16 mx-4 rounded-2xl py-4 px-4 bg-white/10 backdrop-blur-md space-y-3"
         >
-          <div
-            class="absolute z-40 bg-white/30 backdrop-blur-sm opacity-100 inset-0 rounded-2xl"
-            @click="mobileMenuOpen = false"
-          ></div>
           <a
             href="#about"
-            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            class="block text-sm text-right hover:text-[#cce9ff]"
             @click="mobileMenuOpen = false"
           >
             عن البرنامج
           </a>
-
           <a
             href="#why"
-            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            class="block text-sm text-right hover:text-[#cce9ff]"
             @click="mobileMenuOpen = false"
           >
             لماذا مستدام
           </a>
-
           <a
             href="#program"
-            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            class="block text-sm text-right hover:text-[#cce9ff]"
             @click="mobileMenuOpen = false"
           >
             ما نقدمه
           </a>
-
           <a
             href="#achievements"
-            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            class="block text-sm text-right hover:text-[#cce9ff]"
             @click="mobileMenuOpen = false"
           >
             إنجازاتنا
           </a>
-
           <a
             href="#programLevels"
-            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            class="block text-sm text-right hover:text-[#cce9ff]"
             @click="mobileMenuOpen = false"
           >
             مراحل البرنامج
           </a>
-
           <a
             href="#expectedImpact"
-            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            class="block text-sm text-right hover:text-[#cce9ff]"
             @click="mobileMenuOpen = false"
           >
             الأثر المتوقع
           </a>
-
           <a
             href="#contact"
-            class="block text-sm hover:text-[#cce9ff] transition-colors text-right"
+            class="block text-sm text-right hover:text-[#cce9ff]"
             @click="mobileMenuOpen = false"
           >
             اتصل بنا
@@ -161,7 +150,6 @@
 
 <script setup>
 import { ref } from "vue";
-
 const mobileMenuOpen = ref(false);
 </script>
 
@@ -170,10 +158,14 @@ const mobileMenuOpen = ref(false);
 .slide-leave-active {
   transition: all 0.3s ease;
 }
-
 .slide-enter-from,
 .slide-leave-to {
   opacity: 0;
   transform: translateY(-10px);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
 </style>
