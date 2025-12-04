@@ -2,11 +2,11 @@
   <section id="program" class="py-20 bg-[#FFFFFF] pt-[48px]">
     <div class="container mx-auto px-6">
       <div class="title-icon flex flex-col items-center mb-10">
-        <h2 class="font-custum-Bold text-[40px] text-center">
+        <h2 class="font-custum-Bold md:text-[40px] text-[18px] text-center mb-2">
           ما الذي يقدمه البرنامج؟
         </h2>
         <img
-          class="w-[142px] h-[24px]"
+          class="md:w-[172px] md:h-[24px] w-[86px] h-[12px]"
           src="/icons/AboutProgram/Frame@2x.png"
           alt=""
         />

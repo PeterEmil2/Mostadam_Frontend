@@ -1,9 +1,9 @@
 <template>
-  <section dir="rtl" class="bg-[#F3F6FA] py-12 px-4 min-h-[930px]">
+  <section dir="rtl" class="bg-[#F3F6FA] py-12 px-4 min-h-[680px]">
     <div class="mx-auto">
       <div class="text-center mb-10">
         <h2
-          class="text-3xl font-extrabold text-gray-900 mb-2 font-custum-ExtraBold text-[40px]"
+          class="text-[18px] md:text-[40px] font-extrabold text-gray-900 mb-2 font-custum-ExtraBold"
         >
           الأسئلة الشائعة
         </h2>
@@ -11,7 +11,7 @@
           <img
             src="/icons/WhyMostadamIcons/Frame.svg"
             alt="Why Mostadam"
-            class="w-[172px] h-[24px] mx-auto pointer-events-none"
+            class="md:w-[172px] md:h-[24px] mx-auto pointer-events-none w-[86px] h-[12px]"
           />
         </div>
       </div>
@@ -29,7 +29,7 @@
             @keyup.space.prevent="onToggle(item.id)"
             class="w-full text-right p-5 font-bold text-lg text-gray-800 hover:bg-gray-50 transition-colors flex justify-between items-center z-10"
           >
-            <span class="font-custum-SemiBold text-[24px]">{{
+            <span class="font-custum-SemiBold text-[14px] md:text-[24px]">{{
               item.question
             }}</span>
 
@@ -73,7 +73,7 @@
               v-if="activeId === item.id"
               class="px-5 pb-5 pt-0 text-gray-600 leading-relaxed font-custum-Medium text-[20px]"
             >
-              <p class="pt-2 border-t border-gray-100 mt-2">
+              <p class="pt-2 border-t border-gray-100 mt-2 md:text-[20px] text-[12px]">
                 {{ item.answer }}
               </p>
             </div>

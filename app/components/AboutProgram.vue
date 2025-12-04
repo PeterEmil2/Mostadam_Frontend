@@ -1,11 +1,11 @@
 <template>
   <section id="about" class="hero pt-0 mt-0">
     <div class="title-icon flex flex-col items-center">
-      <h1 class="text-center mt-10 font-custum-Bold text-[40px]">
+      <h1 class="text-center mt-10 font-custum-Bold text-[18px] md:text-[40px]">
         عن البرنامج
       </h1>
       <img
-        class="w-[142px] h-[24px]"
+        class="md:w-[172px] md:h-[24px] w-[86px] h-[12px]"
         src="/icons/AboutProgram/Frame@2x.png"
         alt=""
       />
@@ -29,7 +29,7 @@
       </div>
 
       <p
-        class="font-custum-Medium text-[26px] mb-6 leading-relaxed text-center md:text-right"
+        class="font-custum-Medium md:text-[24px] text-[16px] mb-6 leading-relaxed text-center md:text-right"
       >
         مستدام هو برنامج تطوير متكامل يساعد الجمعيات الأهلية على تأسيس وحدات
         استثمار اجتماعي مبتكرة، وبناء نماذج أعمال استثمارية تحقق عائدًا ماليًا

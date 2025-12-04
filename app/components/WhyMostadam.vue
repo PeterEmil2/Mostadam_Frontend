@@ -19,7 +19,7 @@
   >
     <div class="text-center mb-3 md:mb-5 relative z-10">
       <h1
-        class="text-2xl md:text-4xl font-bold text-white mb-2 font-custum-Bold"
+        class="text-[18px] md:text-[40px] font-bold text-white mb-2 font-custum-Bold"
       >
         لماذا مستدام؟
       </h1>
@@ -27,7 +27,7 @@
         <img
           src="/icons/WhyMostadamIcons/Frame.svg"
           alt="Why Mostadam"
-          class="w-[120px] md:w-[172px] h-4 md:h-6 mx-auto pointer-events-none"
+          class="w-[86px] h-[12px] md:w-[172px] md:h-[24px] mx-auto pointer-events-none"
         />
       </div>
 
@@ -54,7 +54,11 @@
             class="absolute w-[120%] h-[120%] bg-white/5 rounded-full blur-3xl -z-10"
           ></div>
 
-          <img src="/images/Img.svg" alt="Why Sustainable" class="" />
+          <img
+            src="/images/Img.svg"
+            alt="Why Sustainable"
+            class="md:w-[574px] md:h-[572.46px] w-[343px] h-[342.08px]"
+          />
         </div>
       </div>
 

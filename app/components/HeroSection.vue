@@ -29,7 +29,7 @@
       <!-- Hero Content -->
       <div class="hero-content flex-1 l md:w-auto text-center pr-[5px]">
         <h3
-          class="text-white mb-3 sm:mb-4 text-[18px] sm:text-[18px] md:text-[40px] font-custum-Bold md:text-right leading-tight"
+          class="text-white mb-3 sm:mb-4 text-[18px] sm:text-[18px] md:text-[40px] font-custum-Medium md:text-right leading-tight"
         >
           مستدام.. عطاء يدوم وأثر يستمر..
         </h3>
