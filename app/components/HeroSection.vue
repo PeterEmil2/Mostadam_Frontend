@@ -22,7 +22,7 @@
         />
         <img
           src="/icons/HeroIcons/tenderIcon.png"
-          class="absolute bottom-0 right-30 -translate-y-1/2 w-20 sm:w-28 md:w-[120px] lg:w-[148px] h-auto"
+          class="absolute bottom-8 right-8 md:right-20 -translate-y-1/2 w-20 sm:w-28 md:w-[120px] lg:w-[148px] h-auto"
         />
       </div>
 

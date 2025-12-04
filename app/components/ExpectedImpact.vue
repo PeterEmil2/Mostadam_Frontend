@@ -31,7 +31,7 @@
         />
       </div>
 
-      <div class="flex justify-center items-center pt-5">
+      <div class="flex justify-center items-center pt-5 pb-10">
         <p
           class="w-[571px] h-[104px] text-center font-custum-Regular font-normal text-[#FFFFFF]"
         >
