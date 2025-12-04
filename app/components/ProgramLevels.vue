@@ -3,9 +3,9 @@
     <div class="max-w-6xl mx-auto">
       <!-- Header -->
       <div class="flex flex-col items-center mb-10">
-        <h1 class="font-custum-Bold text-[40px] mb-2">مراحل البرنامج</h1>
+        <h1 class="font-custum-Bold text-[18px] md:text-[40px] mb-2">مراحل البرنامج</h1>
         <img
-          class="w-[142px] h-[24px]"
+          class="md:w-[172px] md:h-[24px] w-[86px] h-[12px]"
           src="/icons/AboutProgram/Frame@2x.png"
           alt=""
         />

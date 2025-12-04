@@ -17,23 +17,25 @@
       );
     "
   >
-    >
+    
 
     <div class="container mx-auto px-6">
       <div class="title-icon flex flex-col items-center">
-        <h1 class="text-center mt-10 font-custum-Bold text-[40px] text-white">
+        <h1
+          class="text-center mt-10 font-custum-Bold md:text-[40px] text-[18px] text-white"
+        >
           الاثر المتوقع
         </h1>
         <img
-          class="w-[142px] h-[24px]"
+          class="md:w-[172px] md:h-[24px] w-[86px] h-[12px]"
           src="/icons/AboutProgram/Frame@2x.png"
           alt=""
         />
       </div>
 
-      <div class="flex justify-center items-center pt-5 pb-10">
+      <div class="flex justify-center items-center pt-5 md:pb-10 pb:3 ">
         <p
-          class="w-[571px] h-[104px] text-center font-custum-Regular font-normal text-[#FFFFFF]"
+          class="w-[571px] h-[104px] text-center font-custum-Regular font-normal text-[#FFFFFF] md:text-[16px] text-[14px]"
         >
           بعد 18 شهراً من إطلاق البرنامج..
           <br />
@@ -73,7 +75,7 @@
             },
           ]"
           :key="item.id"
-          class="m-2"
+          class="md:m-2"
         >
           <InfoCardVertical :title="item.title" :icon="item.icon" />
         </div>

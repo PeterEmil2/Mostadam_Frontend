@@ -18,7 +18,7 @@
     "
   >
     <div class="text-center relative z-10">
-      <h1 class="text-2xl md:text-[40px] font-bold text-white font-custum-Bold">
+      <h1 class="text-[18px] md:text-[40px] font-bold text-white font-custum-Bold">
         أنجازاتنا
       </h1>
 
@@ -26,7 +26,7 @@
         <img
           src="/icons/WhyMostadamIcons/Frame.svg"
           alt="Why Mostadam"
-          class="w-24 md:w-[172px] h-6 md:h-6 mx-auto pointer-events-none"
+          class="md:h-[24px] md:w-[172px] w-[86px] h-[12px] mx-auto pointer-events-none"
         />
       </div>
 
@@ -53,7 +53,7 @@
             },
           ]"
           :key="item.id"
-          class="w-[357px] h-[193px] flex justify-center"
+          class="flex justify-center"
         >
           <InfoCardVertical :title="item.title" :icon="item.icon" />
         </div>
@@ -76,7 +76,7 @@
             },
           ]"
           :key="item.id"
-          class="w-[357px] h-[193px] flex justify-center"
+          class="flex justify-center"
         >
           <InfoCardVertical :title="item.title" :icon="item.icon" />
         </div>
