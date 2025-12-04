@@ -1,5 +1,5 @@
 <template>
-  <section dir="rtl" class="min-h-screen bg-[#F3F6FA] py-12 px-4 h-[930px]">
+  <section dir="rtl" class="bg-[#F3F6FA] py-12 px-4 min-h-[930px]">
     <div class="mx-auto">
       <div class="text-center mb-10">
         <h2
