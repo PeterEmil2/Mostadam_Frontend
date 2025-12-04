@@ -91,7 +91,7 @@
 
         <!-- Mobile Menu Links -->
         <div
-          class="relative z-50 mt-16 mx-4 rounded-2xl py-4 px-4 bg-white/10 backdrop-blur-md space-y-3"
+          class="relative z-50 mt-16 mx-4 rounded-2xl py-4 px-4 bg-black/10 backdrop-blur-md space-y-3"
         >
           <a
             href="#about"
